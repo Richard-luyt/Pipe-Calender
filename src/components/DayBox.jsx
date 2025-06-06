@@ -111,7 +111,7 @@ export default function DayBox({ date, bricks = [], waters = [], onSmash, hammer
               onClick={() => setAddModal(true)}
               className="mt-1 text-xs text-blue-500 hover:text-blue-700 underline"
             >
-              ➕ 添加每日固定任务
+              ➕ Add fixed Daily Task
             </button>
           </div>
 
@@ -159,7 +159,7 @@ export default function DayBox({ date, bricks = [], waters = [], onSmash, hammer
         <div className="space-y-2">
           <input
             className="w-full border px-2 py-1 rounded text-xs"
-            placeholder="请输入任务内容"
+            placeholder="Please input your task here"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
           />
@@ -167,7 +167,7 @@ export default function DayBox({ date, bricks = [], waters = [], onSmash, hammer
             className="w-full bg-green-500 hover:bg-green-600 text-white text-xs px-3 py-1 rounded"
             onClick={addBrick}
           >
-            添加任务
+            Add Task
           </button>
         </div>
       </Modal>

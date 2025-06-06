@@ -93,13 +93,13 @@ export default function DayBox({ date, bricks = [], waters = [], onSmash, hammer
               className="w-full bg-red-100 hover:bg-red-200 text-xs px-3 py-1 rounded"
               onClick={() => smashBrick(activeIndex)}
             >
-              🧱 敲碎
+              🧱 Task Finished
             </button>
             <button
               className="w-full bg-blue-100 hover:bg-blue-200 text-xs px-3 py-1 rounded"
               onClick={() => startEdit(activeIndex)}
             >
-              ✏️ 编辑
+              ✏️ Edit Your Task
             </button>
           </div>
         )}
@@ -125,7 +125,7 @@ export default function DayBox({ date, bricks = [], waters = [], onSmash, hammer
         <div className="space-y-2">
           <input
             className="w-full border px-2 py-1 rounded text-xs"
-            placeholder="请输入任务内容"
+            placeholder="Please input your task"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
           />
@@ -133,7 +133,7 @@ export default function DayBox({ date, bricks = [], waters = [], onSmash, hammer
             className="w-full bg-green-500 hover:bg-green-600 text-white text-xs px-3 py-1 rounded"
             onClick={addBrick}
           >
-            添加任务
+            ADD TASK
           </button>
         </div>
       </Modal>

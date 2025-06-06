@@ -12,7 +12,7 @@ export default function Modal({ show, onClose, children }) {
             className="text-sm text-gray-500 hover:text-gray-800"
             onClick={onClose}
           >
-            关闭
+            close tab
           </button>
         </div>
       </div>
